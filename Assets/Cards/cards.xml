@@ -1,0 +1,13 @@
+<cards>
+	<card id=1>
+		<name>Orc Underdog</name>
+		<type>Creature</type>
+		<subtype>Orc, Warrior</subtype>
+		<description>Orc Underdog has +1/+1 for each adjacent Orc</description>
+		<cost>
+			<red>1</red>
+		<cost>
+		<attack>2</attack>
+		<defence>1</defence>
+	</card>
+</cards>
