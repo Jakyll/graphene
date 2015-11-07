@@ -7,9 +7,9 @@ public class Player {
 	private int id;
 	private string name;
 	private int health;
-	private List<Card> hand;
-	private List<Card> deck;
-	private List<Card> graveyard;
+	private List<int> hand;
+	private List<int> deck;
+	private List<int> graveyard;
 	private List<Mana> manaPool;
 
 	public int Id {
@@ -39,7 +39,7 @@ public class Player {
 		}
 	}
 
-	public List<Card> Hand {
+	public List<int> Hand {
 		get {
 			return hand;
 		}
@@ -48,7 +48,7 @@ public class Player {
 		}
 	}
 
-	public List<Card> Deck {
+	public List<int> Deck {
 		get {
 			return deck;
 		}
@@ -57,7 +57,7 @@ public class Player {
 		}
 	}
 
-	public List<Card> Graveyard {
+	public List<int> Graveyard {
 		get {
 			return graveyard;
 		}
@@ -82,7 +82,7 @@ public class Player {
 
 	public void drawCard(int count) {
 		for(int i = 0; i < count; i++) {
-			hand.Add(deck [0]);
+			hand.Add(deck[0]);
 			deck.RemoveAt(0);
 		}
 	}

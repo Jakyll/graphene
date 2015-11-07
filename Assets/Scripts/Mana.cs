@@ -10,7 +10,7 @@ public class Mana {
 	private Dictionary<string, Color> colorList = new Dictionary<string, Color>();
 
 	public Mana(string type, int cost) {
-		colorList.Add("white", new Color (0f, 0f, 0f, 1f));
+		colorList.Add("white", new Color (1f, 1f, 1f, 1f));
 		colorList.Add("green", new Color (0.2f, 0.8f, 0.2f, 1f));
 		colorList.Add("red", new Color (1f, 0f, 0f, 1f));
 		colorList.Add("black", new Color (0.8f, 0.8f, 0.8f, 1f));
