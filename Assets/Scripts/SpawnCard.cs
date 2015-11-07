@@ -55,12 +55,12 @@ public class SpawnCard : MonoBehaviour
 		card.Subtype = ("Angel, Knight");
 		card.Description = (UITools.WordWrap("When this creature dies, draw a card, if that card is another Angel Knight, play it on the same tile.", 32));
 		card.ManaCost.Add(new Mana("neutral", 1));
-		card.ManaCost.Add(new Mana("white", 1));
+		card.ManaCost.Add(new Mana("red", 1));
 
 		cardClone.transform.Find("CardName").gameObject.GetComponent<TextMesh>().text = card.Name.ToString().ToUpper();
 		cardClone.transform.Find("CardAttack").gameObject.GetComponent<TextMesh>().text = card.Attack.ToString().ToUpper();
 		cardClone.transform.Find("CardDefence").gameObject.GetComponent<TextMesh>().text = card.Defence.ToString().ToUpper();
-		//cardClone.transform.Find("CardManaCost").gameObject.GetComponent<TextMesh>().text = card.NeutralCost.Cost.ToString().ToUpper();
+		cardClone.transform.Find("CardManaCost").gameObject.GetComponent<TextMesh>().text = card.ManaCost[1].Cost.ToString().ToUpper();
 		cardClone.transform.Find("CardType").gameObject.GetComponent<TextMesh>().text = card.Type.ToString().ToUpper();
 		cardClone.transform.Find("CardSubtype").gameObject.GetComponent<TextMesh>().text = card.Subtype.ToString().ToUpper();
 		cardClone.transform.Find("CardDescription").gameObject.GetComponent<TextMesh>().text = card.Description.ToString();
