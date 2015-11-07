@@ -3,4 +3,12 @@
 		<id>1</id>
 		<count>3</count>
 	</card>
-<deck>
+	<card>
+		<id>4</id>
+		<count>3</count>
+	</card>
+	<card>
+		<id>12</id>
+		<count>3</count>
+	</card>
+</deck>
