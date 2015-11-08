@@ -8,7 +8,7 @@ public class Card {
 	private string description;
 	private List<Mana> manaCost = new List<Mana>();
 	private string type;
-	private List<string> subtype;
+	private List<string> subtype = new List<string>();
 	private int baseAttack;
 	private int baseDefence;
 	private int attack;

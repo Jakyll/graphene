@@ -12,10 +12,10 @@ public class Mana {
 	public Mana(string type, int cost) {
 		colorList.Add("white", new Color (1f, 1f, 1f, 1f));
 		colorList.Add("green", new Color (0.2f, 0.8f, 0.2f, 1f));
-		colorList.Add("red", new Color (1f, 0f, 0f, 1f));
+		colorList.Add("red", new Color (0.85f, 0f, 0.1f, 1f));
 		colorList.Add("black", new Color (0.8f, 0.8f, 0.8f, 1f));
 		colorList.Add("purple", new Color (0.5f, 0f, 0.5f, 1f));
-		colorList.Add("blue", new Color (0f, 0f, 1f, 1f));
+		colorList.Add("cyan", new Color (0f, 0f, 1f, 1f));
 		colorList.Add("neutral", new Color (0.3f, 0.3f, 0.3f, 1f));
 
 		this.type = type;
