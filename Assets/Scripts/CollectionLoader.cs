@@ -52,7 +52,7 @@ public class CollectionLoader : MonoBehaviour {
 
 			foreach(var e in costs)
 			{
-				Mana mana = Mana(e.Name, e.Value); 
+				Mana mana = new Mana(e.Name.ToString(), int.Parse (e.Value)); 
 				manaList.Add (mana);
 			}
 
@@ -66,7 +66,7 @@ public class CollectionLoader : MonoBehaviour {
 				typeList.Add (e.Value);
 			}
 
-			cardObject.Subtype = typeList();
+			cardObject.Subtype = typeList;
 		}
 	}
 
