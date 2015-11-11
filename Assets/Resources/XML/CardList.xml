@@ -3,10 +3,15 @@
 		<name>Orc Underdog</name>
 		<description>Orc Underdog has +1/+1 for each adjacent Orc</description>
 		<manaCost>
-			<red>1</red>
+			<cyan>1</cyan>
+			<black>1</black>
+			<purple>1</purple>
 		</manaCost>
 		<type>Creature</type>
-		<subtype>Orc, Warrior</subtype>
+		<subtypeList>
+			<subtype>Orc</subtype>
+			<subtype>Warrior</subtype>
+		</subtypeList>
 		<attack>2</attack>
 		<defence>1</defence>
 	</card>
@@ -23,7 +28,7 @@
 			<subtype>Knight</subtype>
 		</subtypeList>
 		<attack>2</attack>
-		<defence>1</defence>
+		<defence>4</defence>
 	</card>
 	<card id="3">
 		<name>Warg Rider</name>
@@ -33,7 +38,10 @@
 			<red>1</red>
 		</manaCost>
 		<type>Creature</type>
-		<subtype>Orc, Warrior</subtype>
+		<subtypeList>
+			<subtype>Orc</subtype>
+			<subtype>Warrior</subtype>
+		</subtypeList>
 		<attack>3</attack>
 		<defence>2</defence>
 	</card>

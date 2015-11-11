@@ -5,25 +5,13 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using System;
 
 public class CollectionLoader : MonoBehaviour {
 
-	List<Card> collection = new List<Card>();
-
-	// Use this for initialization
-	void Start () 
+	public static List<Card> LoadCollection()
 	{
-		LoadCollection ("Assets/Resources/XML/CardList.xml");
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	
-	}
-
-	void LoadCollection(string path)
-	{
+		List<Card> collection = new List<Card>();
 		//TODO this should only read cards that the player owns, read first playerLibrary XML file
 
 		//XElement doc= XElement.Load("Assets/Resources/XML/CardList.xml");
@@ -31,10 +19,9 @@ public class CollectionLoader : MonoBehaviour {
 		//XDocument xdocument = XDocument.Load("Assets/Resources/XML/CardList.xml");
 		//IEnumerable<XElement> cards = xdocument.Elements();
 
-
-
 		XElement xelement = XElement.Load("Assets/Resources/XML/CardList.xml");
 		IEnumerable<XElement> cards = xelement.Elements();
+
 		// Read the entire XML
 		foreach (var card in cards)
 		{
@@ -58,7 +45,7 @@ public class CollectionLoader : MonoBehaviour {
 
 			cardObject.ManaCost = manaList;
 
-			IEnumerable<XElement> subTypes = card.Element ("subTypes").Elements ();
+			IEnumerable<XElement> subTypes = card.Element ("subtypeList").Elements ();
 			List<string> typeList = new List<string>();
 
 			foreach(var e in subTypes)
@@ -67,7 +54,10 @@ public class CollectionLoader : MonoBehaviour {
 			}
 
 			cardObject.Subtype = typeList;
+
+			collection.Add (cardObject);
 		}
+		return collection;
 	}
 
 }

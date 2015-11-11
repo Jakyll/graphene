@@ -15,7 +15,8 @@ public class SpawnBoard : MonoBehaviour {
 
 		int tileId = 0;
 
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < 5; i++)
+		{
 			//if 2nd or 4th column
 			if(UITools.IsOdd(i)) {
 				yPos = offsetY / 2;
@@ -40,7 +41,8 @@ public class SpawnBoard : MonoBehaviour {
 		}
 	}
 
-	void CreateTile(float xPos, float yPos, int tileId) {
+	void CreateTile(float xPos, float yPos, int tileId)
+	{
 		GameObject tileClone = Instantiate (tilePrefab, new Vector3 (0F, 0F, 0F), Quaternion.Euler (0, 0, 0)) as GameObject;
 
 		tileClone.name = "Tile_" + tileId;

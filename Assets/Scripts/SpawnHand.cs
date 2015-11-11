@@ -13,7 +13,7 @@ public class SpawnHand : MonoBehaviour {
 		int handId = 0;
 
 		for(int i = 0; i < 1; i++) {
-			xPos += 6;
+			xPos += 6F;
 			Card card = new Card();
 			GameObject cardClone = Instantiate(cardPrefab, new Vector3 (0F, 0F, 0F), Quaternion.Euler (0, 0, 0)) as GameObject;
 
@@ -29,8 +29,8 @@ public class SpawnHand : MonoBehaviour {
 			card.ManaCost.Add(new Mana("red", 2));
 
 
-
-			SpawnCard.CreateCard(cardClone, card);
+			SpawnCard SpawnCard = new SpawnCard();
+			//SpawnCard.CreateCard(cardClone, card, manaGem);
 
 
 
