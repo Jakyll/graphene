@@ -11,6 +11,7 @@ public class Player {
 	private List<int> deck;
 	private List<int> graveyard;
 	private List<Mana> manaPool;
+	public Board board;
 
 	public int Id {
 		get {
