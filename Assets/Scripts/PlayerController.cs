@@ -11,11 +11,11 @@ public class PlayerController : MonoBehaviour {
 		player.Id = 1;
 		player.Name = "Jack";
 		player.Health = 20;
-		Deck deck = new Deck("Assets/Resources/XML/deck.xml");
+		//Deck deck = new Deck("Assets/Resources/XML/deck.xml");
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
 	
 	}

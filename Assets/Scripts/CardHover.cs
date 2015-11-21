@@ -8,9 +8,9 @@ public class CardHover : MonoBehaviour {
 	private Vector3 position;
 
 	private float growSpeed = 0.1F;
-	private float moveSpeed = 0.2F;
+	private float moveSpeed = 0.1F;
 
-	private float maxScale = 0.5F;
+	private float maxScale = 0.35F;
 	private float maxY = 2F;
 	private float maxZ = -5F;
 
