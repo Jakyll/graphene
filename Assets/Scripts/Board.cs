@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 public class Board : MonoBehaviour 
 {
-	public List<tile> board;
+	public List<Tile> board;
 	// Use this for initialization
 	void Start () 
 	{
-		for(int i; i < 15; i++)
+		for(int i=0; i < 15; i++)
 		{
 			board.Add(new Tile());
 		}
