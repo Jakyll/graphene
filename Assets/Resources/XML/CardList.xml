@@ -1,48 +1,767 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE cards SYSTEM "roles.dtd">
 <cards>
-	<card id="1">
-		<name>Orc Underdog</name>
-		<description>Orc Underdog has +1/+1 for each adjacent Orc</description>
-		<manaCost>
-			<cyan>1</cyan>
-			<black>1</black>
-			<purple>1</purple>
-		</manaCost>
-		<type>Creature</type>
-		<subtypeList>
-			<subtype>Orc</subtype>
-			<subtype>Warrior</subtype>
-		</subtypeList>
-		<attack>2</attack>
-		<defence>1</defence>
-	</card>
-	<card id="2">
-		<name>Angel Knight</name>
-		<description>When this creature dies, draw a card, if that card is Angel Knight summon it on the same tile.</description>
-		<manaCost>
-			<neutral>1</neutral>
-			<white>1</white>
-		</manaCost>
-		<type>Creature</type>
-		<subtypeList>
-			<subtype>Angel</subtype>
-			<subtype>Knight</subtype>
-		</subtypeList>
-		<attack>2</attack>
-		<defence>4</defence>
-	</card>
-	<card id="3">
-		<name>Warg Rider</name>
-		<description>Warg Rider has +1 Move.</description>
-		<manaCost>
-			<neutral>1</neutral>
-			<red>1</red>
-		</manaCost>
-		<type>Creature</type>
-		<subtypeList>
-			<subtype>Orc</subtype>
-			<subtype>Warrior</subtype>
-		</subtypeList>
-		<attack>3</attack>
-		<defence>2</defence>
-	</card>
+    <card id="1">
+        <name>Orc Underdog</name>
+        <description>Orc Underdog has +1/+1 for each adjacent Orc.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Orc</subtype>
+            <subtype> Soldier</subtype>
+            <subtype> Humanoid</subtype>
+        </subtypeList>
+        <manaCost>
+            <red>1</red>
+        </manaCost>
+        <attack>2</attack>
+        <defence>1</defence>
+    </card>
+    <card id="2">
+        <name>Rusty Scimitar</name>
+        <description>Target Humanoid gets +2 Attack</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Enchantment</subtype>
+            <subtype> Weapon</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="3">
+        <name>Raider</name>
+        <description>HASTE (Attacks the same turn it is played.)</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Orc</subtype>
+            <subtype> Soldier</subtype>
+            <subtype> Humanoid</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <red>1</red>
+        </manaCost>
+        <attack>2</attack>
+        <defence>1</defence>
+    </card>
+    <card id="4">
+        <name>Spawn Sack</name>
+        <description>When attacked, summon an Orc Brute in its place.</description>
+        <type>Structure</type>
+        <subtypeList>
+            <subtype>Trap</subtype>
+        </subtypeList>
+        <manaCost>
+            <red>2</red>
+        </manaCost>
+        <attack>0</attack>
+        <defence>1</defence>
+    </card>
+    <card id="5">
+        <name>Spike Trap</name>
+        <description>When attacked, deal 8 damage to attacking creature.</description>
+        <type>Structure</type>
+        <subtypeList>
+            <subtype>Trap</subtype>
+        </subtypeList>
+        <manaCost>
+            <red>2</red>
+        </manaCost>
+        <attack>0</attack>
+        <defence>1</defence>
+    </card>
+    <card id="6">
+        <name>Orc Warfighter</name>
+        <description/>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Orc</subtype>
+            <subtype> Soldier</subtype>
+            <subtype> Humanoid</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <red>1</red>
+        </manaCost>
+        <attack>4</attack>
+        <defence>3</defence>
+    </card>
+    <card id="7">
+        <name>Warg Rider</name>
+        <description>Warg Rider has +1 Move.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Orc</subtype>
+            <subtype> Humanoid</subtype>
+        </subtypeList>
+        <manaCost>
+            <red>2</red>
+        </manaCost>
+        <attack>3</attack>
+        <defence>2</defence>
+    </card>
+    <card id="8">
+        <name>Battle Encampment</name>
+        <description>All allied Soldiers get +2 Defence and cost -1 less.</description>
+        <type>Structure</type>
+        <subtypeList>
+            <subtype>Aura</subtype>
+            <subtype> Global</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <red>1</red>
+        </manaCost>
+        <attack>0</attack>
+        <defence>3</defence>
+    </card>
+    <card id="9">
+        <name>Inspire</name>
+        <description>All allied Soldiers get +2 Attack this turn.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Instant</subtype>
+            <subtype> Global</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <red>2</red>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="10">
+        <name>Orc Brute</name>
+        <description/>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Orc</subtype>
+            <subtype> Soldier</subtype>
+            <subtype> Humanoid</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <red>1</red>
+        </manaCost>
+        <attack>5</attack>
+        <defence>4</defence>
+    </card>
+    <card id="11">
+        <name>Rabid Hound</name>
+        <description>HASTE (Has +1 action the turn it is summoned)</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Beast</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <red>2</red>
+        </manaCost>
+        <attack>4</attack>
+        <defence>2</defence>
+    </card>
+    <card id="12">
+        <name>Orc Slavemaster</name>
+        <description>Adjacent Orcs get +2 Attack. At the end of each turn, if Orc Slavemaster is adjacent to 3 Orcs, he is destroyed.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Human</subtype>
+            <subtype> Humanoid</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <red>3</red>
+        </manaCost>
+        <attack>2</attack>
+        <defence>5</defence>
+    </card>
+    <card id="13">
+        <name>Orc Raid Leader</name>
+        <description>RAMPAGE (Remaining attack value used to continue attack), Has +1/+1 Attack for each allied Orc.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Orc</subtype>
+            <subtype> Soldier</subtype>
+            <subtype> Humanoid</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <red>2</red>
+        </manaCost>
+        <attack>5</attack>
+        <defence>5</defence>
+    </card>
+    <card id="14">
+        <name>Frakwah</name>
+        <description>Costs -1 for each humanoid on the battlefield. At the end of each turn, any adjacent humanoids are destroyed. </description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Beast</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>5</neutral>
+            <red>4</red>
+        </manaCost>
+        <attack>10</attack>
+        <defence>10</defence>
+    </card>
+    <card id="15">
+        <name>Spawn Sack</name>
+        <description>At the beginning of your next turn, Spawn Sack is replaced with a Orc Warfighter</description>
+        <type>Structure</type>
+        <subtypeList>
+            <subtype>Effect</subtype>
+        </subtypeList>
+        <manaCost>
+            <red>1</red>
+        </manaCost>
+        <attack>0</attack>
+        <defence>1</defence>
+    </card>
+    <card id="16">
+        <name>Raiding Party</name>
+        <description>Deal x damage to target unit. Where x is the number of allied Orcs.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Instant</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <red>2</red>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="17">
+        <name>Adreniline Rush</name>
+        <description>Target Creature gets +1 Move and Attacks twice this turn.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Instant</subtype>
+            <subtype> Target</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <red>1</red>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="18">
+        <name>Young Scholar</name>
+        <description>When Young Scholar comes into play, draw your next spell.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Human Wizard</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <cyan>2</cyan>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="19">
+        <name/>
+        <description>Move target creature to unoccupied adjacent hextile.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Target</subtype>
+            <subtype> Movement</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="20">
+        <name>War Leader</name>
+        <description>While War Leader is on the board, humans have +1/+1.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Human</subtype>
+            <subtype> Soldier</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="21">
+        <name>Adrenaline Rush</name>
+        <description>Allied creatures have +2 Attack until the end of your oppenents turn.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Aura</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="22">
+        <name>Fortify</name>
+        <description>Allied creatures get +2 Defence.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Aura</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="23">
+        <name>Queen Sarah</name>
+        <description>Whenever this card is played, all opponents cards are silenced as they listen to the queen speak</description>
+        <type>Garbage</type>
+        <subtypeList>
+            <subtype>Szarakin</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="24">
+        <name>Necro-Master</name>
+        <description>Whenever an allied non-undead creature dies, summon an Undead Husk in its place.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Human Necromancer</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack>2</attack>
+        <defence>5</defence>
+    </card>
+    <card id="25">
+        <name>Undead Husk</name>
+        <description/>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Undead Zombie</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack>1</attack>
+        <defence>1</defence>
+    </card>
+    <card id="26">
+        <name>Guardian of the Forest</name>
+        <description>All allied Terra creatures attack twice.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Living Wood</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="27">
+        <name>Frozen Path</name>
+        <description>Freezes all enemy creatures in their current position until your next turn</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="28">
+        <name>Mass Disarm</name>
+        <description>Enemy creatures have their Attack lowered to 1.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <cyan>1</cyan>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="29">
+        <name>Poseidon's Rage</name>
+        <description>While Poseidon's Rage is on the board, allied Aquatic creatures have +1 Attack.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Merfolk</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="30">
+        <name>Ice Wall</name>
+        <description>Enemy creatures don't attack next turn.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="31">
+        <name>Dragon's Breath</name>
+        <description>Deal 1 damage to all enemy creatures.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="32">
+        <name>King Triton</name>
+        <description>Allied merfolk in adjacent hexagons have +2 defense</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Merfolk</subtype>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="33">
+        <name>Echo Stomp</name>
+        <description/>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="34">
+        <name>Goblin WarcCheif</name>
+        <description>Adjacent goblins are unaffected by cowardice</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <green>2</green>
+        </manaCost>
+        <attack>3</attack>
+        <defence>5</defence>
+    </card>
+    <card id="35">
+        <name>Wumpus</name>
+        <description>Gentle Giant: The Wumpus will not attack</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <green>2</green>
+        </manaCost>
+        <attack>9</attack>
+        <defence>9</defence>
+    </card>
+    <card id="36">
+        <name>Wumpus Wrangler</name>
+        <description>Wumpus Whisperer: Adjacent Wumpuses can attack</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <green>1</green>
+        </manaCost>
+        <attack>5</attack>
+        <defence>4</defence>
+    </card>
+    <card id="37">
+        <name>Gremlin Cannoneer</name>
+        <description/>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <green>2</green>
+        </manaCost>
+        <attack>6</attack>
+        <defence>5</defence>
+    </card>
+    <card id="38">
+        <name>Crow Cage</name>
+        <description>Attack is blocked. Attacking Creature is unable to attack next turn, Draw a card</description>
+        <type>Trap</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <green>1</green>
+        </manaCost>
+        <attack>-</attack>
+        <defence>5</defence>
+    </card>
+    <card id="39">
+        <name>Rally the Boys</name>
+        <description>Destroy a friendly goblin. All other goblins you control recieve +2/+2 until the end of your next turn</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <green>2</green>
+        </manaCost>
+        <attack>-</attack>
+        <defence>-</defence>
+    </card>
+    <card id="40">
+        <name>Goblin Shaman</name>
+        <description>If a friendly goblin died during your own or your opponents turn you may use this creatures attack to instead resummon it from your graveyard for 1/2 its cost</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <green>2</green>
+        </manaCost>
+        <attack>3</attack>
+        <defence>3</defence>
+    </card>
+    <card id="41">
+        <name>RedSkin Bezerker</name>
+        <description/>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <green>4</green>
+        </manaCost>
+        <attack>10</attack>
+        <defence>7</defence>
+    </card>
+    <card id="42">
+        <name>Corpse-A-Pult</name>
+        <description>Destroy a friendly creatrue to give Corpse-A-Pult +4 Attack this turn</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <green>2</green>
+        </manaCost>
+        <attack>6</attack>
+        <defence>7</defence>
+    </card>
+    <card id="43">
+        <name>Goblin Drumer</name>
+        <description>Inspire: Use this creatures attack to give a friendly goblin +3 attack this turn</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <green>3</green>
+        </manaCost>
+        <attack>3</attack>
+        <defence>6</defence>
+    </card>
+    <card id="44">
+        <name>Blood Feud</name>
+        <description>Pick a creature type you control. All currently active creatures you control of that type act as though they have +2 attack against a different creature type of your choice until death</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <green>3</green>
+        </manaCost>
+        <attack>-</attack>
+        <defence>-</defence>
+    </card>
+    <card id="45">
+        <name>Troll Pummeler</name>
+        <description>Relentless: You know what this does</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>4</neutral>
+            <green>4</green>
+        </manaCost>
+        <attack>11</attack>
+        <defence>12</defence>
+    </card>
+    <card id="46">
+        <name>Battle Feast</name>
+        <description>For every creature that dies during your battle phase, summon a 1/1 crow</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <green>4</green>
+        </manaCost>
+        <attack>-</attack>
+        <defence>-</defence>
+    </card>
+    <card id="47">
+        <name>Release the Wumpus!</name>
+        <description>All Wumpses you control may attack this turn. If you do not control a Wumpus, search your deck for one and summon it (it may not attack)</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <green>6</green>
+        </manaCost>
+        <attack>-</attack>
+        <defence>-</defence>
+    </card>
+    <card id="48">
+        <name>Frenzy</name>
+        <description>Target creature recieves +2/-2 until the end of your turn</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <green>1</green>
+        </manaCost>
+        <attack>-</attack>
+        <defence>-</defence>
+    </card>
+    <card id="49">
+        <name>Curse of Rust</name>
+        <description>Destroy target equipment or all equipment held by target creature</description>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <green>2</green>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="50">
+        <name>Curse of Steel</name>
+        <description>Target creature becomes a sword granting +1/+0</description>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <purple>3</purple>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="51">
+        <name>Goblin Sneak</name>
+        <description>When Goblin Sneak attacks a creature he takes any equipment they were carrying</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="52">
+        <name>Stainless Steel Blade</name>
+        <description>Cannot be destroyed. Grants +1 Attack.</description>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="53">
+        <name>Holy Sword</name>
+        <description>Holding creature is considered an angel for all effects. Grants +1/+1.</description>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <white>2</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="54">
+        <name>Rust Storm</name>
+        <description>All equipment on the board are destroyed.</description>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="55">
+        <name>Disintegrate</name>
+        <description>Remove from play target equipment or all equipment held by target creature</description>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="56">
+        <name>Greenskin Grunt</name>
+        <description>Cowardice: Becomes 1/1 if a friendly unit died during your opponents turn</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <green>1</green>
+        </manaCost>
+        <attack>4</attack>
+        <defence>1</defence>
+    </card>
+    <card id="57">
+        <name>Living Blade</name>
+        <description>Becomes a +1/+0 sword on death</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <purple>2</purple>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="58">
+        <name>Storm of Steel</name>
+        <description/>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
 </cards>

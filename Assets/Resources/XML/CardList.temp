@@ -1,0 +1,48 @@
+<cards>
+	<card id="1">
+		<name>Orc Underdog</name>
+		<description>Orc Underdog has +1/+1 for each adjacent Orc</description>
+		<manaCost>
+			<cyan>1</cyan>
+			<black>1</black>
+			<purple>1</purple>
+		</manaCost>
+		<type>Creature</type>
+		<subtypeList>
+			<subtype>Orc</subtype>
+			<subtype>Warrior</subtype>
+		</subtypeList>
+		<attack>2</attack>
+		<defence>1</defence>
+	</card>
+	<card id="2">
+		<name>Angel Knight</name>
+		<description>When this creature dies, draw a card, if that card is Angel Knight summon it on the same tile.</description>
+		<manaCost>
+			<neutral>1</neutral>
+			<white>1</white>
+		</manaCost>
+		<type>Creature</type>
+		<subtypeList>
+			<subtype>Angel</subtype>
+			<subtype>Knight</subtype>
+		</subtypeList>
+		<attack>2</attack>
+		<defence>4</defence>
+	</card>
+	<card id="3">
+		<name>Warg Rider</name>
+		<description>Warg Rider has +1 Move.</description>
+		<manaCost>
+			<neutral>1</neutral>
+			<red>1</red>
+		</manaCost>
+		<type>Creature</type>
+		<subtypeList>
+			<subtype>Orc</subtype>
+			<subtype>Warrior</subtype>
+		</subtypeList>
+		<attack>3</attack>
+		<defence>2</defence>
+	</card>
+</cards>
