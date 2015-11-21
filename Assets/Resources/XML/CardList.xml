@@ -260,11 +260,11 @@
             <neutral>2</neutral>
             <cyan>2</cyan>
         </manaCost>
-        <attack/>
-        <defence/>
+        <attack>2</attack>
+        <defence>3</defence>
     </card>
     <card id="19">
-        <name/>
+        <name>Displace</name>
         <description>Move target creature to unoccupied adjacent hextile.</description>
         <type>Spell</type>
         <subtypeList>
@@ -277,15 +277,15 @@
     </card>
     <card id="20">
         <name>War Leader</name>
-        <description>While War Leader is on the board, humans have +1/+1.</description>
+        <description>While War Leader is on the board, Humans have +1/+1.</description>
         <type>Creature</type>
         <subtypeList>
             <subtype>Human</subtype>
             <subtype> Soldier</subtype>
         </subtypeList>
         <manaCost/>
-        <attack/>
-        <defence/>
+        <attack>2</attack>
+        <defence>2</defence>
     </card>
     <card id="21">
         <name>Adrenaline Rush</name>
@@ -350,8 +350,8 @@
             <subtype>Living Wood</subtype>
         </subtypeList>
         <manaCost/>
-        <attack/>
-        <defence/>
+        <attack>0</attack>
+        <defence>0</defence>
     </card>
     <card id="27">
         <name>Frozen Path</name>
@@ -366,7 +366,7 @@
     </card>
     <card id="28">
         <name>Mass Disarm</name>
-        <description>Enemy creatures have their Attack lowered to 1.</description>
+        <description>Enemy creatures have their Attack set to 1.</description>
         <type>Spell</type>
         <subtypeList>
             <subtype/>
@@ -435,7 +435,7 @@
     </card>
     <card id="34">
         <name>Goblin WarcCheif</name>
-        <description>Adjacent goblins are unaffected by cowardice</description>
+        <description>Adjacent goblins are unaffected by Cowardice.</description>
         <type>Creature</type>
         <subtypeList>
             <subtype/>
@@ -449,7 +449,7 @@
     </card>
     <card id="35">
         <name>Wumpus</name>
-        <description>Gentle Giant: The Wumpus will not attack</description>
+        <description>The Wumpus will not attack</description>
         <type>Creature</type>
         <subtypeList>
             <subtype/>
@@ -463,7 +463,7 @@
     </card>
     <card id="36">
         <name>Wumpus Wrangler</name>
-        <description>Wumpus Whisperer: Adjacent Wumpuses can attack</description>
+        <description>Adjacent Wumpuses can attack.</description>
         <type>Creature</type>
         <subtypeList>
             <subtype/>
@@ -477,7 +477,7 @@
     </card>
     <card id="37">
         <name>Gremlin Cannoneer</name>
-        <description/>
+        <description>Ranged</description>
         <type>Creature</type>
         <subtypeList>
             <subtype/>
@@ -500,13 +500,13 @@
             <neutral>1</neutral>
             <green>1</green>
         </manaCost>
-        <attack>-</attack>
+        <attack/>
         <defence>5</defence>
     </card>
     <card id="39">
         <name>Rally the Boys</name>
         <description>Destroy a friendly goblin. All other goblins you control recieve +2/+2 until the end of your next turn</description>
-        <type>Creature</type>
+        <type>Spell</type>
         <subtypeList>
             <subtype/>
         </subtypeList>
@@ -514,8 +514,8 @@
             <neutral>1</neutral>
             <green>2</green>
         </manaCost>
-        <attack>-</attack>
-        <defence>-</defence>
+        <attack/>
+        <defence/>
     </card>
     <card id="40">
         <name>Goblin Shaman</name>
@@ -532,7 +532,7 @@
         <defence>3</defence>
     </card>
     <card id="41">
-        <name>RedSkin Bezerker</name>
+        <name>Redskin Bezerker</name>
         <description/>
         <type>Creature</type>
         <subtypeList>
@@ -547,7 +547,7 @@
     </card>
     <card id="42">
         <name>Corpse-A-Pult</name>
-        <description>Destroy a friendly creatrue to give Corpse-A-Pult +4 Attack this turn</description>
+        <description>Exhaust: Destroy a friendly creature to give Corpse-A-Pult +4 Attack this turn.</description>
         <type>Creature</type>
         <subtypeList>
             <subtype/>
@@ -561,7 +561,7 @@
     </card>
     <card id="43">
         <name>Goblin Drumer</name>
-        <description>Inspire: Use this creatures attack to give a friendly goblin +3 attack this turn</description>
+        <description>Exhaust: Use this creatures attack to give a friendly goblin +3 attack this turn.</description>
         <type>Creature</type>
         <subtypeList>
             <subtype/>
@@ -584,8 +584,8 @@
             <neutral>2</neutral>
             <green>3</green>
         </manaCost>
-        <attack>-</attack>
-        <defence>-</defence>
+        <attack/>
+        <defence/>
     </card>
     <card id="45">
         <name>Troll Pummeler</name>
@@ -612,7 +612,7 @@
             <neutral>1</neutral>
             <green>4</green>
         </manaCost>
-        <attack>-</attack>
+        <attack/>
         <defence>-</defence>
     </card>
     <card id="47">
@@ -625,7 +625,7 @@
         <manaCost>
             <green>6</green>
         </manaCost>
-        <attack>-</attack>
+        <attack/>
         <defence>-</defence>
     </card>
     <card id="48">
@@ -676,8 +676,8 @@
             <subtype/>
         </subtypeList>
         <manaCost/>
-        <attack/>
-        <defence/>
+        <attack>0</attack>
+        <defence>0</defence>
     </card>
     <card id="52">
         <name>Stainless Steel Blade</name>
@@ -750,8 +750,8 @@
             <neutral>1</neutral>
             <purple>2</purple>
         </manaCost>
-        <attack/>
-        <defence/>
+        <attack>0</attack>
+        <defence>0</defence>
     </card>
     <card id="58">
         <name>Storm of Steel</name>
@@ -763,5 +763,290 @@
         <manaCost/>
         <attack/>
         <defence/>
+    </card>
+    <card id="59">
+        <name>Cunt Smasher</name>
+        <description>Destroy target creature.</description>
+        <type/>
+        <subtypeList>
+            <subtype/>
+        </subtypeList>
+        <manaCost/>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="60">
+        <name>Shithead slepper</name>
+        <description>Creature on target hextile is Asleep.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Hextile Enchantment</subtype>
+        </subtypeList>
+        <manaCost>
+            <green>17</green>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="62">
+        <name>Angel Apprentice</name>
+        <description>Everytime this Creature deals Damage, Restore 1 Health.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <white>1</white>
+        </manaCost>
+        <attack>1</attack>
+        <defence>2</defence>
+    </card>
+    <card id="63">
+        <name>Angel Healer</name>
+        <description>Restore 1 Health to all Creatures at the end of your turn.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <white>1</white>
+        </manaCost>
+        <attack>0</attack>
+        <defence>4</defence>
+    </card>
+    <card id="64">
+        <name>Healing Touch</name>
+        <description>Restore 5 Health and Draw a Card.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Target</subtype>
+        </subtypeList>
+        <manaCost>
+            <white>1</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="65">
+        <name>Angel Knight</name>
+        <description>When this Creature dies, draw a card, if that card is Angel Knight summon it on the same tile.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <white>2</white>
+        </manaCost>
+        <attack>2</attack>
+        <defence>4</defence>
+    </card>
+    <card id="66">
+        <name>Angel Enforcer</name>
+        <description>Cannot be played behind an existing Creature.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <white>2</white>
+        </manaCost>
+        <attack>3</attack>
+        <defence>1</defence>
+    </card>
+    <card id="67">
+        <name>Might of Abaddon</name>
+        <description>Angel Creatures gain +2 Attack this turn.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Aura</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <white>1</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="68">
+        <name>Angel Defender</name>
+        <description>When this Creature deals damage Increase Defence by 1. For every 2 points of Defence higher than 3, Reduce Attack by 1.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <white>2</white>
+        </manaCost>
+        <attack>3</attack>
+        <defence>3</defence>
+    </card>
+    <card id="69">
+        <name>Angelic Priest</name>
+        <description>When this card is played, restore 1 health to all Creatures you control.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <white>3</white>
+        </manaCost>
+        <attack>1</attack>
+        <defence>6</defence>
+    </card>
+    <card id="70">
+        <name>Pauldrons of Might</name>
+        <description>Target Creature gains +1/+3.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Enchantment</subtype>
+            <subtype> Weapon</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <white>1</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="71">
+        <name>Angel Captain</name>
+        <description>While this Creature is in Play, All Angels in the same column gain +1 Attack.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <white>3</white>
+        </manaCost>
+        <attack>4</attack>
+        <defence>4</defence>
+    </card>
+    <card id="72">
+        <name>Blessings of Lucifer</name>
+        <description>Restore 2 Health to all Creatures that Attacked this turn</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Aura</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <white>2</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="73">
+        <name>Angel Commander</name>
+        <description>While this card is in play, Every Angel you control gains +1/+2.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>2</neutral>
+            <white>3</white>
+        </manaCost>
+        <attack>4</attack>
+        <defence>5</defence>
+    </card>
+    <card id="74">
+        <name>Heaven's Guard</name>
+        <description>Angel Creatures are Immune when Attacking this turn.</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Aura</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>1</neutral>
+            <white>4</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="75">
+        <name>Blessings of Hadraniel</name>
+        <description>Restore 2 Health to all Creatures and Draw 2 Cards</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Instant</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <white>3</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="76">
+        <name>Angel Berserker</name>
+        <description>Everytime this creature attacks Reduce it's Attack and Defence by 1</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <white>3</white>
+        </manaCost>
+        <attack>6</attack>
+        <defence>6</defence>
+    </card>
+    <card id="77">
+        <name>Angel Brigadier</name>
+        <description>Deals Damage to all Creature in the same Row</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <white>4</white>
+        </manaCost>
+        <attack>6</attack>
+        <defence>7</defence>
+    </card>
+    <card id="78">
+        <name>Angelic Major General</name>
+        <description>While this Creature is in Play, all Angel Creatures have +2/+2.</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>4</neutral>
+            <white>4</white>
+        </manaCost>
+        <attack>7</attack>
+        <defence>6</defence>
+    </card>
+    <card id="79">
+        <name>Heavenly Horde</name>
+        <description>Summon 2 Angel Knights and 1 Angel Commander, Draw a Card</description>
+        <type>Spell</type>
+        <subtypeList>
+            <subtype>Instant</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>4</neutral>
+            <white>5</white>
+        </manaCost>
+        <attack/>
+        <defence/>
+    </card>
+    <card id="80">
+        <name>Lucifer LightBringer</name>
+        <description>Summon 2 Angel Knights and Restore 10 Health</description>
+        <type>Creature</type>
+        <subtypeList>
+            <subtype>Angel</subtype>
+        </subtypeList>
+        <manaCost>
+            <neutral>3</neutral>
+            <white>7</white>
+        </manaCost>
+        <attack>6</attack>
+        <defence>9</defence>
     </card>
 </cards>

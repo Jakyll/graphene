@@ -28,12 +28,21 @@ public class CollectionLoader : MonoBehaviour {
 			Card cardObject = new Card();
 			String type = card.Element("type").Value;
 
-			if(type.Equals("creature"))
+			if(type.Equals("Creature")||type.Equals("Structure"))
 			{
-				cardObject.Attack = int.Parse(card.Element("attack").Value);
-				cardObject.Defence = int.Parse(card.Element("defence").Value);
-				cardObject.BaseAttack = int.Parse(card.Element("attack").Value);
-				cardObject.BaseDefence = int.Parse(card.Element("defence").Value);
+				if(!(card.Element("attack").Value.Equals ("")))
+				{
+					cardObject.Attack = int.Parse(card.Element("attack").Value);
+					cardObject.BaseAttack = int.Parse(card.Element("attack").Value);
+				}
+
+				if(!(card.Element("defence").Value.Equals ("")))
+				{
+					cardObject.Defence = int.Parse(card.Element("defence").Value);					
+					cardObject.BaseDefence = int.Parse(card.Element("defence").Value);
+				}
+
+
 			}
 
 			cardObject.Id = int.Parse (card.Attribute("id").Value);
