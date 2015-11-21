@@ -31,6 +31,8 @@ public class CollectionLoader : MonoBehaviour {
 			cardObject.Name = card.Element("name").Value;
 			cardObject.Attack = int.Parse(card.Element("attack").Value);
 			cardObject.Defence = int.Parse(card.Element("defence").Value);
+			cardObject.BaseAttack = int.Parse(card.Element("attack").Value);
+			cardObject.BaseDefence = int.Parse(card.Element("defence").Value);
 			cardObject.Description = card.Element("description").Value;
 			cardObject.Type = card.Element("type").Value;
 

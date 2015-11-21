@@ -86,6 +86,24 @@ public class Card {
 			defence = value;
 		}
 	}
+
+	public int BaseAttack {
+		get {
+			return baseAttack;
+		}
+		set {
+			baseAttack = value;
+		}
+	}
+
+	public int BaseDefence {
+		get {
+			return baseDefence;
+		}
+		set {
+			baseDefence = value;
+		}
+	}
 	
 	public int Move {
 		get {
