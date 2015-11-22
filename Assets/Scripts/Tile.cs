@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Tile {
-
+public class Tile
+{
 	private int id;
 	private Card card;
+
+	public Tile(int id)
+	{
+		this.id = id;
+	}
 
 	public int Id {
 		get {

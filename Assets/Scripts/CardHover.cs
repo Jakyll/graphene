@@ -10,8 +10,8 @@ public class CardHover : MonoBehaviour {
 	private float growSpeed = 0.1F;
 	private float moveSpeed = 0.1F;
 
-	private float maxScale = 0.35F;
-	private float maxY = 2F;
+	private float maxScale = 0.3F;
+	private float maxY = 1F;
 	private float maxZ = -5F;
 
 	private float initScale;
@@ -59,10 +59,17 @@ public class CardHover : MonoBehaviour {
 		transform.localPosition = position;
 	}
 
+	void OnMouseDown()
+	{
+		if(mouseOver)
+		{
+			PlayerManager.selectionId = int.Parse(gameObject.name);
+		}
+	}
+
 	void OnMouseEnter()
 	{
 		mouseOver = true;
-
 	}
 
 	void OnMouseExit()

@@ -11,7 +11,7 @@ public class Player {
 	private List<int> deck;
 	private List<int> graveyard;
 	private List<Mana> manaPool;
-	public Board board;
+	private Board board = new Board();
 
 	public int Id {
 		get {
@@ -73,6 +73,15 @@ public class Player {
 		}
 		set {
 			manaPool = value;
+		}
+	}
+
+	public Board Board {
+		get {
+			return board;
+		}
+		set {
+			board = value;
 		}
 	}
 

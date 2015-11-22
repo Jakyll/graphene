@@ -21,7 +21,6 @@ public class SpawnCard : MonoBehaviour
 
 		foreach(Mana mana in card.ManaCost)
 		{
-
 			GameObject manaGem = Instantiate(manaPrefab, new Vector3 (0F, 0F, 0F), Quaternion.Euler (0, 0, 0)) as GameObject;
 
 			manaGem.transform.Find("Cost").gameObject.GetComponent<TextMesh>().text = mana.Cost.ToString();

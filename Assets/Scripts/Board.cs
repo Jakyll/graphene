@@ -1,22 +1,36 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
-public class Board : MonoBehaviour 
+public class Board
 {
-	public List<Tile> board;
-	// Use this for initialization
-	void Start () 
+	private List<Tile> hexBoard = new List<Tile>();
+
+	public Board()
 	{
-		for(int i=0; i < 15; i++)
+		for(int i = 0; i < 15; i++)
 		{
-			board.Add(new Tile());
+			Tile tile = new Tile(i);
+			this.hexBoard.Add(tile);
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+	public List<Tile> HexBoard {
+		get {
+			return hexBoard;
+		}
+		set {
+			hexBoard = value;
+		}
+	}
+
+	public void summonUnit(int tileId, Card card)
 	{
-	
+		hexBoard[tileId].Card = card;
+	}
+
+	public void moveUnit(int targetTile, int destTile)
+	{
+		hexBoard[destTile].Card = hexBoard[targetTile].Card;
+		hexBoard[targetTile].Card = null;
 	}
 }

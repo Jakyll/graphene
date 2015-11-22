@@ -6,7 +6,7 @@ public class Mana {
 
 	private string type;
 	private int cost;
-	private Color color= new Color();
+	private Color color = new Color();
 	private Dictionary<string, Color> colorList = new Dictionary<string, Color>();
 
 	public Mana(string type, int cost) {
